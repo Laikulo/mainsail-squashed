@@ -14,4 +14,4 @@ my_body_text="mainsail: $PROJ_VERSION - upstream commit $upstream_commitish"$'\n
 git tag -af $PROJ_VERSION -F <(echo "$my_body_text")
 git push -u origin $PROJ_VERSION -f
 
-gh release create "$PROJ_VERSION" -F <(echo "$my_body_text") "$REPO_DIR/mainsail-$PROJ_VERSIOJ"*".sfs" --verify-tag 
+gh release create "$PROJ_VERSION" -F <(echo "$my_body_text") "$REPO_DIR/mainsail-$PROJ_VERSION"*".sfs" --verify-tag 
