@@ -22,7 +22,7 @@ $(OUTPUT_BASE)-%.sfs: dist.%/index.html src.timestamp
 
 
 dist.stock/index.html: VITE_BASE=/
-dist.prefix/index.html: VITE_BASE=/mainsail
+dist.prefix/index.html: VITE_BASE=/mainsail/
 dist.%/index.html: workspace.container src/.git/HEAD src.timestamp
 	[ -d dist.$* ] || mkdir dist.$*
 	$(PODMAN) run --rm \
